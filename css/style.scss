@@ -1,0 +1,159 @@
+@import "modules/general";
+@import "modules/grid";
+@import "modules/typo";
+@import "modules/spacer";
+@import "modules/image";
+@import "modules/background";
+@import "modules/button";
+@import "modules/shadow";
+@import "modules/border";
+
+// header
+.atas {
+    padding: .5rem 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.menu2 {
+    display: flex;
+    align-items: center;
+
+    a {
+        padding: 1rem;
+        color: white;
+
+        &.contact {
+            padding: 1rem 2rem;
+            background: $purple;
+            border-radius: 50px;
+
+            &:hover {
+                background: white;
+                color: $lightpurple;
+                cursor: pointer;
+            }
+        }
+
+        &:hover {
+            background: white;
+            color: $lightpurple;
+            cursor: pointer;
+        }
+    }
+}
+
+#burger {
+    display: none;
+}
+
+// home
+.ui {
+    position: absolute;
+    top: 35rem;
+}
+
+.web {
+    position: absolute;
+    top: 10rem;
+}
+
+// about
+.project {
+    background: $purple;
+    padding: 2.5rem 2rem;
+    border-radius: 30px;
+
+    &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+// services
+.curd {
+    border-radius: 30px;
+
+    &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+// footer
+.submit {
+    a {
+        margin-left: 1rem;
+        padding: 1rem 2rem;
+        background: $purple;
+        color: white;
+        transition: 0.5s;
+        border-radius: 10rem;
+
+        &:hover {
+            background: white;
+            color: $lightpurple;
+        }
+    }
+}
+
+.share {
+    text-align: center;
+
+    a {
+        color: white;
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        background: $halfwhite;
+        border-radius: 50%;
+        margin: .5rem;
+
+        &:hover {
+            transform: scale(1.2);
+            background: $purple;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and(max-width:1024px) {
+
+    .ui,
+    .web {
+        display: none;
+    }
+}
+
+@media screen and(max-width:768px) {
+    #burger {
+        display: block;
+    }
+
+    .menu2 {
+        position: absolute;
+        top: 100%;
+        background: $halfpurple;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        display: block;
+
+        a {
+            text-align: center;
+            display: block;
+            margin: 7.5rem 0;
+
+            &.contact {
+                margin: 0 25%;
+            }
+        }
+
+        &.active {
+            right: 0;
+        }
+    }
+}

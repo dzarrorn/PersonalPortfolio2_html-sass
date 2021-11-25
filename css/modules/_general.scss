@@ -1,0 +1,44 @@
+@import "color";
+
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  transition: .2s linear;
+  // text-transform: capitalize;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  color: $purple;
+  font-family: "Poppins", sans-serif;
+}
+
+.font2 {
+  font-family: "Playfair Display", serif;
+}
+
+// @media screen and (max-width: 414px) {
+//   body {
+//     font-size: 50%;
+//   }
+// }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 120%;
+}
+
+p,
+h4,
+h5 {
+  margin: 0;
+  line-height: 180%;
+}
