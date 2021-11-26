@@ -12,6 +12,10 @@ var swiper = new Swiper(".testimonial-slide", {
         delay: 5000,
         disableOnInteraction: false,
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
     breakpoints: {
         0: {
             slidesPerView: 1,
