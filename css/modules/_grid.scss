@@ -53,6 +53,10 @@
   display: flex;
 }
 
+.none {
+  display: none;
+}
+
 .relative {
   position: relative;
 }
@@ -142,6 +146,10 @@
   .flex-md {
     display: flex;
   }
+
+  .none-md {
+    display: none;
+  }
 }
 
 @media screen and(max-width:768px) {
@@ -203,6 +211,10 @@
 
   .flex-s {
     display: flex;
+  }
+
+  .none-s {
+    display: none;
   }
 }
 
@@ -273,5 +285,9 @@
 
   .flex-xs {
     display: flex;
+  }
+
+  .none-xs {
+    display: none;
   }
 }

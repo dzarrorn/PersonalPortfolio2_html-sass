@@ -156,6 +156,10 @@ h5 {
   display: flex;
 }
 
+.none {
+  display: none;
+}
+
 .relative {
   position: relative;
 }
@@ -391,6 +395,9 @@ h5 {
     display: -ms-flexbox;
     display: flex;
   }
+  .none-md {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -515,6 +522,9 @@ h5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .none-s {
+    display: none;
   }
 }
 
@@ -646,6 +656,9 @@ h5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .none-xs {
+    display: none;
   }
 }
 
@@ -3327,6 +3340,7 @@ h5 {
 }
 
 .header {
+  padding: .5rem 0;
   position: fixed;
   right: 0;
   left: 0;
@@ -3344,7 +3358,7 @@ h5 {
 }
 
 .menu2 a {
-  margin: .5rem;
+  margin: 0 .5rem;
   padding: 1rem;
   color: white;
 }
