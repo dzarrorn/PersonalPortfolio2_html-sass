@@ -4,3 +4,64 @@ $quarterwhite: rgba(255, 255, 255, 0.25);
 $halfpurple: linear-gradient(214.02deg, rgba(183, 92, 255, 0.5) 6.04%, rgba(103, 26, 228, 0.5) 92.95%);
 $lightpurple:#9F39DA;
 $halfblack:rgba(0, 0, 0, 0.5);
+
+.bg-image {
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-image2 {
+    background-image: url(/img/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-white {
+    background: white;
+}
+
+.bg-black {
+    background: black;
+}
+
+.bg-purple {
+    background: $purple;
+}
+
+.bg-halfpurple {
+    background: $halfpurple;
+}
+
+
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.lightpurple {
+    color: $lightpurple;
+}
+
+.halfwhite {
+    color: $halfwhite;
+}
+
+.halfblack {
+    color: $halfblack;
+}
+
+.quarterwhite {
+    color: $quarterwhite;
+}
+
+
+@media screen and(max-width:1024px) {}
+
+@media screen and(max-width:414px) {}
