@@ -4,6 +4,7 @@ $quarterwhite: rgba(255, 255, 255, 0.25);
 $halfpurple: linear-gradient(214.02deg, rgba(183, 92, 255, 0.5) 6.04%, rgba(103, 26, 228, 0.5) 92.95%);
 $lightpurple:#9F39DA;
 $halfblack:rgba(0, 0, 0, 0.5);
+$darkblue: #181E41;
 
 .bg-image {
     background-image: url(/img/background.jpg);
@@ -17,6 +18,10 @@ $halfblack:rgba(0, 0, 0, 0.5);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.bg-darkblue {
+    background: $darkblue;
 }
 
 .bg-white {
